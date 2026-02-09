@@ -23,8 +23,8 @@
       when:
         - policy_creation_source_ip is defined
         - policy_creation_destination_ip is defined
-        - "'10.10.199.0/24' | ansible.utils.network_in_network( policy_creation_source_ip )"
-        - "'10.10.200.0/24' | ansible.utils.network_in_network( policy_creation_destination_ip )"
+        - "policy_creation_source_ip.startswith('10.10.199')"
+        - "policy_creation_destination_ip.startswith('10.10.200')"
 
     - name: Include a role dynamically
       ansible.builtin.include_role:
