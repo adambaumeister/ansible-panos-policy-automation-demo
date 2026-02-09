@@ -1,5 +1,6 @@
 # ansible-panos-policy-automation-demo
-This repository gives a demo of using the paloaltonetworks.panos_policy_automation collection to do policy lookups and creation.
+This repository gives a demo of using the paloaltonetworks.panos_policy_automation collection to do policy lookups and creation
+specifcally within **Ansible Automation Platform.**
 
 ## AAP Setup
 
