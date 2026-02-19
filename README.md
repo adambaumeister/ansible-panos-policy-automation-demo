@@ -8,9 +8,7 @@ specifcally within **Ansible Automation Platform.**
 
 Within AAP configure an Execution environment. This collection uses the same image as the main ansible collection.
 
-**image**: ghcr.io/paloaltonetworks/pan-os-ansible-rhel9:latest
-
-![img.png](docs/img/img.png)
+**image**: ghcr.io/paloaltonetworks/panos_policy_automation-rhel9:latest
 
 ### Configure Credentials
 
@@ -21,7 +19,8 @@ Add a "network" type credential login for your device, using the Panorama userna
 ### Configure a project
 
 Create your repository that will store your Policy Files as well as your top level playbooks. You can
-use this repo as a PoC/starting point if you like.
+use this repo as a PoC/starting point if you like. You must create your own repository to specify
+your preset policy files.
 
 SCM URL: **https://github.com/adambaumeister/ansible-panos-policy-automation-demo**
 
